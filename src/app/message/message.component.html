@@ -1,0 +1,6 @@
+<div>text: {{ message?.text }}</div>
+<ng-container *ngFor="let button of message.buttons">
+  <button [disabled]="button.disabled" style="margin-right: 5px;">
+    {{ button.text }}
+  </button>
+</ng-container>
